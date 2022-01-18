@@ -1,0 +1,329 @@
+
+/* Start About Section */
+
+section.about-me {
+  padding: 60px 0;
+  .container {
+    .col-lg-6 {
+      overflow: hidden;
+      perspective: 500px;
+      img {
+        //max-width: 510px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        @extend %transition;
+        &:hover {
+          transform:translate3d(0,0,-50px)
+        }
+      }
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 42px;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 26px;
+    }
+    p {
+      line-height: 2;
+      font-size: 18px;
+    }
+    .social {
+      margin-top: 15px;
+      a {
+        width: 40px;
+        height: 40px;
+        line-height: 36px;
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 22px;
+        text-align: center;
+        border: 1px solid #37A000;
+        border-radius: 50%;
+        background-color: #37A000;
+        color: $other-color;
+        @extend %transition;
+        cursor: pointer;
+        &:hover {
+          background-color: green;
+        }
+      }
+    }
+  }
+}
+
+/* End About Section */
+
+
+/* Start My Skills Section */
+
+section.my-skills {
+  padding: 60px 0;
+  .container {
+    h2 {
+      font-weight: bold;
+      font-size: 42px;
+    }
+    .col-lg-3 {
+      text-align: center;
+      .imges {
+        width: 170px;
+        height: 170px;
+        position: relative;
+        display: inline-block;
+        background-color: $other-color;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 35px;
+        margin: 10px;
+        border: 1px solid $main-color;
+        cursor: pointer;
+        @extend %transition;
+        &:hover {
+          background-color: $main-color;
+        }
+        img {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          &.js {
+            border-radius: 50%;
+            background-color: $other-color;
+          }
+          &.ajax {
+            border-radius: 10px;
+          }          
+          &.vue {
+            width: 120px;
+            height: 120px;
+          }
+          &.github {
+            border-radius: 50%;
+          }
+          &.json {
+            width: 120px;
+            height: 60px;
+          }
+        }
+      }
+      p {
+        font-size: 28px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* End My Skills Section */
+
+
+/* Start My Work Section */
+
+section.my-works {
+  padding: 60px 0;
+  text-align: center;
+  .container {
+    h2 {
+      font-weight: bold;
+      font-size: 42px;
+    }
+    .box {
+      border-radius: 3px;
+      margin-bottom: 40px;
+      @extend %transition;
+      &:hover {
+        box-shadow: 10px 20px 20px 0px #c9cbd5, -10px -10px 20px 0px #c9cbd5;
+        //box-shadow: 10px 20px 20px 0px #63c330, -10px -10px 20px 0px #63c330;
+      }
+      .head {
+        height: 225px;
+        overflow: hidden;
+        perspective: 500px;
+        img {
+          max-width: 100%;
+          min-height: 100%;
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            transform:translate3d(0,0,50px)
+          }
+        }
+      }
+      .text {
+        height: 200px;
+        border: 1px solid #eee;
+        padding: 15px 10px 40px;
+        cursor: pointer;
+        @extend %transition;
+        h3  {
+          text-align: center;
+          font-weight: bold;
+          font-size: 30px;
+          color: $main-color;
+        }
+        a {
+          width: 170px;
+          padding: 12px 0px;
+          background-color: transparent;
+          border: 1px solid $main-color;
+          border-radius: 5px;
+          margin: 35px auto 0;
+          display: block;
+          font-weight: bold;
+          font-size: 18px;
+          text-decoration: none;
+          text-align: center;
+          outline: none;
+          color: $main-color;
+          @extend %transition;
+          &:hover {
+            color: $other-color;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+  }
+  .show-more {
+    background: transparent;
+    border: 1px solid $main-color;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: $main-color;
+    line-height: 1.15;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    @extend %transition;
+    &:hover {
+      background-color: $main-color;
+      color: $other-color;
+    }
+  }
+}
+
+/* End My Work Section */
+
+
+/* Start Contact Me Section */
+
+
+section.contact-me {
+  padding: 60px 0;
+  .container {
+    h2 {
+      font-weight: bold;
+      font-size: 42px;
+    }
+    .row {
+      input {
+        width: 100%;
+        height: 50px;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        border: none;
+        border-bottom: 1px solid $main-color;
+        outline: none;
+        &:focus {
+          outline: green;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 200px;
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-bottom: 40px;
+        border: none;
+        border-bottom: 1px solid $main-color;
+        &:focus {
+          outline: green;
+        }
+      }
+      button {
+        width: 20%;
+        padding: 12px 35px;
+        background-color: $main-color;
+        border: 1px solid $main-color;
+        border-radius: 3px;
+        margin: 35px auto 30px;
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        outline: none;
+        color: $other-color;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          color: $other-color;
+          background-color: green;
+        }
+      }
+    }
+  }
+}
+
+
+/* End Contact Me Section */
+
+.footer {
+  height: auto;
+  padding: 25px 60px;
+  text-align: center;
+  background-color: $sub-color;
+  color: $other-color;
+  @media (max-width: 991px) {
+    padding: 25px 0px;
+  }
+  span {
+    @media (max-width: 991px) {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+  }
+  .icon {
+    width: 45%;
+    text-align: center;
+    display: inline-block;
+    @media (max-width: 991px) {
+      margin-left: -60px;
+    }
+    i {
+      margin: 0 10px;
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      line-height: 26px;
+      text-align: center;
+      border: 1px solid #37A000;
+      border-radius: 50%;
+      background-color: #37A000;
+      color: $other-color;
+      @extend %transition;
+      cursor: pointer;
+      &:hover {
+        background-color: green;
+      }
+    }
+  }
+  .me {
+    width: auto;
+    display: inline-block;
+    span {
+      text-align: right;
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+}

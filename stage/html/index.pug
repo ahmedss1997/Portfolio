@@ -1,0 +1,267 @@
+doctype html
+html(lang="en", dir="ltr")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/bootstrap5.css")
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/master.css")
+    link(href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Reem+Kufi&display=swap" rel="stylesheet")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title My Portiflo
+  body
+    
+    // Start Navbar
+    
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light#header_id
+      .container-fluid
+        a.navbar-brand(href='#') Navbar
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Home
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                | Dropdown
+              ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                li
+                  a.dropdown-item(href='#') Action
+                li
+                  a.dropdown-item(href='#') Another action
+                li
+                  hr.dropdown-divider
+                li
+                  a.dropdown-item(href='#') Something else here
+            li.nav-item
+              a.nav-link.disabled Disabled
+          form.d-flex
+            input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+            button.btn.btn-outline-success(type='submit') Search
+              
+    // End Navbar
+
+    include layout/header
+
+    // Start About Section
+
+    section.about-me
+      .container
+        h2.head-border.text-center My Bloger
+        .row 
+          .col-lg-6.wow.fadeInRight(data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="300")
+            img(src="imges/man.jpg", alt="")
+          .col-lg-6
+            h3.wow.fadeInLeft(data-wow-duration="1.5s" data-wow-delay="0.4s" data-wow-offset="300") About Me
+            p.wow.fadeInLeft(data-wow-duration="1.5s" data-wow-delay="0.6s" data-wow-offset="300") Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa eos recusandae quam autem eveniet qui temporibus? Ut ex cupiditate natus ipsum, sit vel ipsa dolore delectus, odio nam libero tempora laudantium. Quaerat sit sed consectetur ab animi dolorem ipsa dolor harum minus sunt reprehenderit adipisci quae id doloremque numquam, libero quia illo esse unde laudantium optio.
+            .social.wow.fadeInLeft(data-wow-duration="1.5s" data-wow-delay="0.8s" data-wow-offset="100")
+              a.hvr-float-shadow(target='_blank', href="https://msng.link/o/?100015658807836=fm") #[i.fab.fa-facebook-f]
+              a.hvr-float-shadow(target='_blank', href="https://api.whatsapp.com/send?phone=+201090985842") #[i.fab.fa-whatsapp]
+              //- i.fab.fa-twitter
+              a.hvr-float-shadow #[i.fab.fa-google-plus-g]
+              a.hvr-float-shadow #[i.fab.fa-linkedin-in]
+              //- i.fab.fa-instagram
+              a.hvr-float-shadow #[i.fab.fa-github-alt]
+              
+
+    hr
+
+    // End About Section
+
+    // Start My Skills Section
+
+    section.my-skills
+      .container
+        h2.head-border.text-center My Skills
+        .row
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="200")
+              img(src="imges/html5.png", alt="")
+            p Html5
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay=".8s" data-wow-offset="200")
+              img(src="imges/css.png", alt="")
+            p Css3
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="1.2s" data-wow-offset="200")
+              img.js(src="imges/middle-modified.png", alt="")
+            p JavaScript
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="1.5s" data-wow-offset="200")
+              img(src="imges/jquery-pn.png", alt="")
+            p jQuery
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="1.8s" data-wow-offset="200")
+              img(src="imges/bootstrap-pn.png", alt="")
+            p Bootstrap
+          //.col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.1s" data-wow-offset="200")
+              //img(src="imges/tawilind-modified.png", alt="")
+              img(src="imges/images-t.png", alt="")
+            p Tailwind Css
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.1s" data-wow-offset="200")
+              img(src="imges/sass-pn.png", alt="")
+            p Sass
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.4s" data-wow-offset="200")
+              img(src="imges/pug-pn.png", alt="")
+            p Pug 
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.7s" data-wow-offset="200")
+              img(src="imges/gulp-pn.png", alt="")
+            p Gulp
+          //.col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3.3s" data-wow-offset="100")
+              img.json(src="imges/json.png", alt="")
+            p JSON
+          //.col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3.7s" data-wow-offset="100")
+              img.ajax(src="imges/ajax.png", alt="")
+            p Ajax            
+          //.col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="4s" data-wow-offset="100")
+              img.vue(src="imges/vue-v.png", alt="")
+            p Vue JS            
+          //.col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="4.3s" data-wow-offset="100")
+              img(src="imges/react.png", alt="")
+            p React JS                         
+          .col-lg-3.col-md-4.col-sm-6
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3s" data-wow-offset="100")
+              img.github(src="imges/GitHub-Mark.png", alt="")
+            p Github
+
+    hr
+
+    // End My Skills Section
+
+    // Start My Work Section
+    
+    
+    section.my-works
+      .container
+        h2.head-border.text-center My Works
+        .row
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/Baby.png", alt="")
+              .text
+                h3 Babes
+                a.hvr-wobble-to-bottom-right View Live
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/Herb.png", alt="")
+              .text
+                h3 Beautey
+                a.hvr-wobble-horizontal View Live
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/task.png", alt="")
+              .text
+                h3 Education Website
+                a.hvr-wobble-to-top-right View Live
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/dash.png", alt="")
+              .text
+                h3 Dashboard #[Br (Not Completed)]
+                a.hvr-wobble-to-top-right View Live
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/saloons.png", alt="")
+              .text
+                h3 Saloons Website
+                a.hvr-wobble-horizontal View Live
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/cascade.png", alt="")
+              .text
+                h3 Cascade
+                a.hvr-wobble-to-bottom-right View Live
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/learn.png", alt="")
+              .text
+                h3 Company Website
+                a.hvr-wobble-to-bottom-right View Live
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/photography.png", alt="")
+              .text
+                h3 Photography
+                a.hvr-wobble-horizontal View Live
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/phone.png", alt="")
+              .text
+                h3 Mobile Website
+                a.hvr-wobble-to-top-right View Live
+        button.show-more Show More
+
+    hr
+
+    // End My Work Section
+
+
+    // Start Contact Me Section
+
+    section.contact-me
+      .container
+        //h1#heading Hidden
+        h2.head-border.text-center Contact Me
+        .row
+          .col-lg-6.wow.bounceInLeft(data-wow-duration="1s" data-wow-offset="300")
+            input(type="text" nam="username" placeholder="Name")
+            input(type="email" nam="email" placeholder="Email")
+            input(type="text" nam="subject" placeholder="Subject")
+          .col-lg-6.wow.bounceInRight(data-wow-duration="1s" data-wow-offset="300")
+            textarea(name="Message", placeholder="Message")
+          //button#hid Show / Hidden
+          button.hvr-float-shadow Send Message
+
+    // End Contact Me Section
+
+    // Start Footer Section
+
+    .footer
+      span All Rights Are Save &copy; 2020 Privacy Policy
+      .icon
+        i.fab.fa-facebook-f
+        i.fab.fa-whatsapp
+        i.fab.fa-google-plus-g
+      .me
+        span Designed By #[a(href="#") Ahmed_Elbohy]
+
+
+
+    // End Footer Section
+
+    a#scroll-top.hvr-buzz-out
+      i.fa.fa-chevron-up.fa-2x
+
+    include layout/footerscripts

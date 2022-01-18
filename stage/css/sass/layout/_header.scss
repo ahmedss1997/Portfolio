@@ -1,0 +1,107 @@
+
+/* Start Header Page */
+
+.header {
+  background: url(../imges/imgg.jpg) no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    text-align: center;
+    padding: 35vh 0;
+    h1 {
+      color: $green-color;
+      margin-top: 0;
+      font-size: 60px;
+      @media (max-width: 767px) {
+        font-size: 42px;
+      }
+    }
+    p {
+      color: $other-color;
+      font-size: 18px;
+      letter-spacing: 10px;
+      @media (max-width: 767px) {
+        letter-spacing: 8px;
+      }
+    }
+    span {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 80px;
+      color: $other-color;
+      animation: move 1s infinite ease-in-out;
+      i {
+        border: 1px solid $gray-color;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        line-height: 45px;
+        font-size: 26px;
+        cursor: pointer;
+        //animation: hvr-pulse 1s infinite ease-in-out;
+      }
+    }
+  }
+}
+
+
+/* End Header Page */
+
+
+@keyframes move {
+  
+  0% {
+    bottom: 0;
+  }
+  
+  50% {
+    bottom: 10px;
+  }
+  
+  
+  100% {
+    bottom: 0px;
+  }
+  
+}
+
+
+
+/*
+
+@keyframes move {
+  
+  0% {
+    margin-bottom: 0px;
+  }
+  
+  50% {
+    margin-bottom: 10px;
+  }
+  
+  
+  100% {
+    margin-bottom: 0px;
+  }
+  
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
